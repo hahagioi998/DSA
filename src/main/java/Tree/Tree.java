@@ -12,4 +12,10 @@ public class Tree {
         }
     }
 
+    public void traverseInOrder() {
+        if (root != null) {
+            root.traverseInOrder();
+        }
+    }
+
 }
