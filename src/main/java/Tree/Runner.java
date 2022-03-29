@@ -27,5 +27,9 @@ public class Runner {
         intTree.delete(50);
         System.out.println();
         intTree.traverseInOrder();
+        System.out.println();
+        intTree.traversePreOrder();
+        System.out.println();
+        intTree.traversePostOrder();
     }
 }
