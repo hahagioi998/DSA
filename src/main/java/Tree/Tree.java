@@ -1,5 +1,6 @@
 package Tree;
 
+//Implementation of binary search tree
 
 public class Tree {
     private TreeNode root;
