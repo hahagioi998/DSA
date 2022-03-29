@@ -4,17 +4,18 @@ public class Runner {
 
     public static void main(String[] args) {
         Heap heap = new Heap(9);
-        heap.insert(22);
-        heap.insert(19);
-        heap.insert(18);
-        heap.insert(15);
-        heap.insert(3);
-        heap.insert(14);
-        heap.insert(4);
-        heap.insert(12);
-        System.out.println(heap.toString());
-        heap.insert(20);
-        System.out.println(heap.toString());
+        heap.insert(80);
+        heap.insert(75);
+        heap.insert(60);
+        heap.insert(68);
+        heap.insert(55);
+        heap.insert(40);
+        heap.insert(52);
+        heap.insert(67);
+        heap.printHeap();
+        heap.delete(0);
+        heap.printHeap();
+
 
     }
 }
