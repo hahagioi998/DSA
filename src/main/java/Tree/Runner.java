@@ -15,5 +15,11 @@ public class Runner {
         intTree.insert(32);
 
         intTree.traverseInOrder();
+        System.out.println();
+        System.out.println(intTree.get(27));
+        System.out.println(intTree.get(22));
+        System.out.println(intTree.get(50));
+        System.out.println("MAX=" + intTree.max());
+        System.out.println("MIN=" + intTree.min());
     }
 }

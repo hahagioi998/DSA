@@ -5,6 +5,50 @@ public class TreeNode {
     private TreeNode leftChild;
     private TreeNode rightChild;
 
+    public TreeNode(int value) {
+        this.value = value;
+    }
+
+    public int min() {
+        if (leftChild == null) {
+            return value;
+        } else {
+            return leftChild.min();
+        }
+    }
+
+    public int max() {
+        if (rightChild == null) {
+            return value;
+        } else {
+            return rightChild.max();
+        }
+    }
+
+    public TreeNode get(int data) {
+        if (data == value) {
+            return this;
+        }
+        if (data < value) {
+            if (leftChild != null) {
+                return leftChild.get(data);
+            }
+        }
+        if (data > value) {
+            if (rightChild != null) {
+                return rightChild.get(data);
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public String toString() {
+        return "TreeNode{" +
+                "value=" + value +
+                '}';
+    }
+
     public void insert(int data) {
         if (value == data) {
             return;
@@ -35,9 +79,6 @@ public class TreeNode {
         }
     }
 
-    public TreeNode(int value) {
-        this.value = value;
-    }
 
     public int getValue() {
         return value;
