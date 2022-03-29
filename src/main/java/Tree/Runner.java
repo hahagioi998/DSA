@@ -13,6 +13,7 @@ public class Runner {
         intTree.insert(26);
         intTree.insert(22);
         intTree.insert(32);
+        intTree.insert(10);
 
         intTree.traverseInOrder();
         System.out.println();
@@ -21,5 +22,10 @@ public class Runner {
         System.out.println(intTree.get(50));
         System.out.println("MAX=" + intTree.max());
         System.out.println("MIN=" + intTree.min());
+
+        intTree.traverseInOrder();
+        intTree.delete(50);
+        System.out.println();
+        intTree.traverseInOrder();
     }
 }
